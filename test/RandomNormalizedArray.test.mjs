@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {RandomNormalizedArray} from "../RandomNormalizedArray";
+import {RandomNormalizedArray} from "../src/RandomNormalizedArray";
 
 describe('RandomNormalizedArray', function() {
     describe('get', function () {
