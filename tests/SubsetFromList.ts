@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {SubsetFromList} from "../src/SubsetFromList";
+import {SubsetFromList} from "../dist/SubsetFromList";
 
 describe('SubsetFromList', function() {
     describe('next1', function() {
@@ -36,7 +36,7 @@ describe('SubsetFromList', function() {
                     count++;
                 }
             }
-            assertEquals(512, count);
+            assert.strictEqual(512, count);
         });
     });
 });

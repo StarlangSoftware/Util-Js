@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {Subset} from "../src/Subset";
+import {Subset} from "../dist/Subset";
 
 describe('Subset', function() {
     describe('next1', function() {

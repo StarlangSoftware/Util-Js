@@ -1,7 +1,7 @@
 export class Subset{
 
     protected set: Array<number>
-    private rangeEnd: number
+    private readonly rangeEnd: number
     protected elementCount: number
 
     /**

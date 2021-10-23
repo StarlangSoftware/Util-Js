@@ -1,0 +1,29 @@
+{
+  "name": "nlptoolkit-util",
+  "version": "1.0.0",
+  "description": "Simple Utils Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Olcay Taner Yıldız",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarlangSoftware/Util-Js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StarlangSoftware/Util-Js/issues"
+  },
+  "homepage": "https://github.com/StarlangSoftware/Util-Js#readme",
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "mocha": "^9.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}

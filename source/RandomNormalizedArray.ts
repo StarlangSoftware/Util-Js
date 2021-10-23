@@ -1,6 +1,6 @@
-class RandomNormalizedArray {
+export class RandomNormalizedArray {
 
-    private array: Array<number>;
+    private readonly array: Array<number>;
 
     /**
      * The constructor of {@link RandomNormalizedArray} class gets an integer itemCount as an input. Creates an array of

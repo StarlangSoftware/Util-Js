@@ -1,7 +1,7 @@
 export class Tuple {
 
-    private first: number;
-    private last: number;
+    private readonly first: number;
+    private readonly last: number;
 
     /**
      * The constructor of {@link Tuple} class which takes two integer inputs and initializes first and last variables

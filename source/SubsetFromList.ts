@@ -2,8 +2,8 @@ import {Subset} from "./Subset";
 
 export class SubsetFromList extends Subset{
 
-    private elementList: Array<number>;
-    private indexList: Array<number>;
+    private readonly elementList: Array<number>;
+    private readonly indexList: Array<number>;
 
     /**
      * A constructor of {@link SubsetFromList} class takes an integer list and an integer elementCount as inputs. It initializes

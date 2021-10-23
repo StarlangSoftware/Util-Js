@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {RandomNormalizedArray} from "../src/RandomNormalizedArray";
+import {RandomNormalizedArray} from "../dist/RandomNormalizedArray";
 
 describe('RandomNormalizedArray', function() {
     describe('get', function () {
@@ -7,10 +7,10 @@ describe('RandomNormalizedArray', function() {
             let randomNormalizedArray = new RandomNormalizedArray(10);
             let array = randomNormalizedArray.get();
             let sum = 0.0;
-            for (var d in array){
-                sum += d;
+            for (var i = 0; i < 10; i++){
+                sum += array[i];
             }
-            assert.strictEqual(1.0, sum, 0.0);
+            assert.equal(sum, 1.0);
         });
     });
 });

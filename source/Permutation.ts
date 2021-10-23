@@ -1,7 +1,7 @@
 export class Permutation{
 
-    private a: Array<number>
-    private n: number
+    private readonly a: Array<number>
+    private readonly n: number
 
     /**
      * A constructor of {@link Permutation} class which creates a new {@link Array} and assigns integer
@@ -12,7 +12,7 @@ export class Permutation{
     constructor(n: number) {
         this.n = n
         this.a = new Array(n);
-        for (var i = 0; i < this.a.length; i++) {
+        for (let i = 0; i < this.a.length; i++) {
             this.a[i] = i;
         }
     }

@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import {Permutation} from "../src/Permutation";
+import {Permutation} from "../dist/Permutation";
 
 describe('Permutation', function() {
     describe('next1', function() {
