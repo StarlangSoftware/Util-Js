@@ -31,6 +31,13 @@
             this.nextRandom();
             return this.seed % maxRange;
         };
+        Random.prototype.shuffle = function (array) {
+            var _a;
+            for (var i = array.length - 1; i > 0; i--) {
+                var randomIndex = this.nextInt(i + 1);
+                _a = [array[randomIndex], array[i]], array[i] = _a[0], array[randomIndex] = _a[1];
+            }
+        };
         return Random;
     }());
     exports.Random = Random;

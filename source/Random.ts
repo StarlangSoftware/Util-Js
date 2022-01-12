@@ -24,4 +24,12 @@ export class Random {
         this.nextRandom()
         return this.seed % maxRange;
     }
+
+    shuffle(array: Array<any>){
+        for (let i = array.length - 1; i > 0; i--){
+            let randomIndex = this.nextInt(i + 1);
+            [array[i], array[randomIndex]] =
+                [array[randomIndex], array[i]];
+        }
+    }
 }

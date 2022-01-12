@@ -4,4 +4,5 @@ export declare class Random {
     private nextRandom;
     nextDouble(min?: number, max?: number): number;
     nextInt(maxRange: number): number;
+    shuffle(array: Array<any>): void;
 }
