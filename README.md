@@ -1,8 +1,7 @@
 For Developers
 ============
 You can also see [Cython](https://github.com/starlangsoftware/Util-Cy), [Java](https://github.com/starlangsoftware/Util), 
-[C++](https://github.com/starlangsoftware/Util-CPP), [Swift](https://github.com/starlangsoftware/Util-Swift), 
-[Python](https://github.com/starlangsoftware/Util-Py), or [C#](https://github.com/starlangsoftware/Util-CS) repository.
+[C++](https://github.com/starlangsoftware/Util-CPP), [Swift](https://github.com/starlangsoftware/Util-Swift), [C](https://github.com/starlangsoftware/Util-C), [Python](https://github.com/starlangsoftware/Util-Py), or [C#](https://github.com/starlangsoftware/Util-CS) repository.
 
 ## Requirements
 
