@@ -3,4 +3,5 @@ export declare class FileContents {
     private filePointer;
     constructor(fileName: string);
     readLine(): string;
+    hasNextLine(): boolean;
 }

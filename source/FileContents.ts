@@ -19,4 +19,8 @@ export class FileContents {
         }
         return ""
     }
+
+    hasNextLine(): boolean{
+        return this.filePointer < this.contents.length
+    }
 }

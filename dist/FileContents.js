@@ -25,6 +25,9 @@
             }
             return "";
         };
+        FileContents.prototype.hasNextLine = function () {
+            return this.filePointer < this.contents.length;
+        };
         return FileContents;
     }());
     exports.FileContents = FileContents;
