@@ -33,6 +33,13 @@
             }
             return array;
         };
+        /**
+         * Creates and returns a random index array, where the indexes in the array are between 0 and itemCount - 1. For
+         * example, if itemCount is 4, the method returns an array of indexes 0, 1, 2, 3 but shuffled.
+         * @param itemCount Number of indexes
+         * @param seed Random seed
+         * @return Shuffled array containing numbers between 0 and itemCount - 1.
+         */
         RandomArray.indexArray = function (itemCount, seed) {
             var array = new Array(itemCount);
             for (var i = 0; i < itemCount; i++) {
