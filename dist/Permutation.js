@@ -10,17 +10,17 @@
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Permutation = void 0;
-    var Permutation = /** @class */ (function () {
+    class Permutation {
         /**
          * A constructor of {@link Permutation} class which creates a new {@link Array} and assigns integer
          * numbers starting from 0 to given input n.
          *
          * @param n integer input.
          */
-        function Permutation(n) {
+        constructor(n) {
             this.n = n;
             this.a = new Array(n);
-            for (var i = 0; i < this.a.length; i++) {
+            for (let i = 0; i < this.a.length; i++) {
                 this.a[i] = i;
             }
         }
@@ -29,30 +29,30 @@
          *
          * @return Array a.
          */
-        Permutation.prototype.get = function () {
+        get() {
             return this.a;
-        };
+        }
         /**
          * The next method generates next permutation for the {@link Array} a.
          *
          * @return true if next permutation is possible, false otherwise.
          */
-        Permutation.prototype.next = function () {
-            var i = this.n - 2;
+        next() {
+            let i = this.n - 2;
             while (i >= 0 && this.a[i] >= this.a[i + 1]) {
                 i--;
             }
             if (i == -1) {
                 return false;
             }
-            var j = this.n - 1;
+            let j = this.n - 1;
             while (this.a[i] >= this.a[j]) {
                 j--;
             }
-            var tmp = this.a[i];
+            let tmp = this.a[i];
             this.a[i] = this.a[j];
             this.a[j] = tmp;
-            var k = i + 1;
+            let k = i + 1;
             j = this.n - 1;
             while (k < j) {
                 tmp = this.a[k];
@@ -62,9 +62,8 @@
                 j--;
             }
             return true;
-        };
-        return Permutation;
-    }());
+        }
+    }
     exports.Permutation = Permutation;
 });
 //# sourceMappingURL=Permutation.js.map

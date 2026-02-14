@@ -10,26 +10,25 @@
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.FileContents = void 0;
-    var fs = require("fs");
-    var FileContents = /** @class */ (function () {
-        function FileContents(fileName) {
-            var data = fs.readFileSync(fileName, 'utf8');
+    const fs = require("fs");
+    class FileContents {
+        constructor(fileName) {
+            let data = fs.readFileSync(fileName, 'utf8');
             this.contents = data.split("\n");
             this.filePointer = 0;
         }
-        FileContents.prototype.readLine = function () {
+        readLine() {
             if (this.filePointer < this.contents.length) {
-                var s = this.contents[this.filePointer];
+                let s = this.contents[this.filePointer];
                 this.filePointer++;
                 return s;
             }
             return "";
-        };
-        FileContents.prototype.hasNextLine = function () {
+        }
+        hasNextLine() {
             return this.filePointer < this.contents.length;
-        };
-        return FileContents;
-    }());
+        }
+    }
     exports.FileContents = FileContents;
 });
 //# sourceMappingURL=FileContents.js.map

@@ -10,7 +10,7 @@
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Tuple = void 0;
-    var Tuple = /** @class */ (function () {
+    class Tuple {
         /**
          * The constructor of {@link Tuple} class which takes two integer inputs and initializes first and last variables
          * with given inputs.
@@ -18,7 +18,7 @@
          * @param first integer input.
          * @param last  integer input.
          */
-        function Tuple(first, last) {
+        constructor(first, last) {
             this.first = first;
             this.last = last;
         }
@@ -27,19 +27,18 @@
          *
          * @return the first item.
          */
-        Tuple.prototype.getFirst = function () {
+        getFirst() {
             return this.first;
-        };
+        }
         /**
          * Getter for the last item at {@link Tuple}.
          *
          * @return the last item.
          */
-        Tuple.prototype.getLast = function () {
+        getLast() {
             return this.last;
-        };
-        return Tuple;
-    }());
+        }
+    }
     exports.Tuple = Tuple;
 });
 //# sourceMappingURL=Tuple.js.map

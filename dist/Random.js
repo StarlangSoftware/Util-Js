@@ -10,36 +10,35 @@
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Random = void 0;
-    var Random = /** @class */ (function () {
-        function Random(seed) {
+    class Random {
+        constructor(seed) {
             this.seed = 0;
             if (seed != undefined) {
                 this.seed = seed;
             }
         }
-        Random.prototype.nextRandom = function () {
+        nextRandom() {
             this.seed = (1664525 * this.seed + 1013904223) % Number.MAX_SAFE_INTEGER;
-        };
-        Random.prototype.nextDouble = function (min, max) {
+        }
+        nextDouble(min, max) {
             this.nextRandom();
             if (min != undefined && max != undefined) {
                 return min + (this.seed / Number.MAX_SAFE_INTEGER) * (max - min);
             }
             return this.seed / Number.MAX_SAFE_INTEGER;
-        };
-        Random.prototype.nextInt = function (maxRange) {
+        }
+        nextInt(maxRange) {
             this.nextRandom();
             return this.seed % maxRange;
-        };
-        Random.prototype.shuffle = function (array) {
-            var _a;
-            for (var i = array.length - 1; i > 0; i--) {
-                var randomIndex = this.nextInt(i + 1);
-                _a = [array[randomIndex], array[i]], array[i] = _a[0], array[randomIndex] = _a[1];
+        }
+        shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let randomIndex = this.nextInt(i + 1);
+                [array[i], array[randomIndex]] =
+                    [array[randomIndex], array[i]];
             }
-        };
-        return Random;
-    }());
+        }
+    }
     exports.Random = Random;
 });
 //# sourceMappingURL=Random.js.map
